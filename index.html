@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /*MENÜ*/
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: black;
+            padding: 20px 25px; /*alttan üstten 20px sağdan soldan 25px*/
+        }
+        nav{
+            display: inline-block;
+            width: calc(100% - 103px);
+            text-align-last: right;
+        }
+        nav ul{
+            list-style-type: none;
+        }
+        nav ul li{
+            display: inline-block;
+            margin: 10px 25px;
+        }
+        .logo{
+            color: white;
+            text-decoration: none; /*altındaki çizgiyi yok eder */
+            font-weight: bold;
+            font-size: 22px;
+        }
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 15px 25px;
+        }
+        nav ul li a:hover{  /* imleç üstüne geldiğinde */
+            color: red;
+        }
+        /*MENÜ ALTINDAKİ RESİM KISMI*/
+        #section-1{
+            background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url("resim/yemek.jpg");
+            background-position: top;
+            padding: 12px;
+            height: 850px;
+            width: 100%;
+            background-size: cover;
+        }
+        .btn-s1{
+            padding: 25px 20px;
+            background-color: red;
+            color: white;
+            font-size: 20px;
+            margin-left: 37%;
+            margin-top: 20%;
+            border-color: red;
+            border-radius: 8px;
+            transition: color 1s;
+        }
+        .btn-s1:hover{
+            color: black;
+        }
+
+        /*CARD KULLANIMI*/
+        #section-2{
+            display: flex;  /* resimelri yan yana getiridi*/
+            justify-content: space-around;
+            margin: 200px 0;
+        }
+        .card{
+            width: 20%;
+            border-radius: 8px;
+            box-shadow: 0 5px 9px 0 rgba(0,0,0,0.4);
+        }
+        .card:hover{
+            opacity: 0.7;
+        }
+        .container{
+            text-align: center;
+            padding: 5px;
+        }
+        .container p{
+            margin-top: 10px;
+            font-size: 19px;
+        }
+        img{
+            width: 100%;
+            border-radius: 8px 8px 0 0; 
+        }
+
+        /*SECTİON 3*/
+        #section-3{
+            display: flex;
+            justify-content: space-around;
+            margin: 200px 0;
+        }
+
+        /*FOOTER KISMI*/
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 22px;
+            padding: 20px;
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+
+    <!--MENÜ KISMI-->
+    <header>
+        <a href="#" class="logo">LOGO</a>
+        <nav>
+            <ul>
+                <li><a href="#">Menü</a></li>
+                <li><a href="#">İçecekler</a></li>
+                <li><a href="#">Tatlilar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <!--Menü Altındaki Resim KISMI-->
+    <main>
+        <section id="section-1">
+            <button class="btn-s1">MENÜLERİ GÖRMEK İÇİN TIKLAYINIZ</button>
+        </section>
+
+        <section id="section-2">
+            <div class="card">
+                <img src="resim/chickenroyale.png" alt="">
+                <div class="container">
+                    <h2>Chicken Royale Menu</h2>
+                    <p>Chicken Royale® eti, uzun ve büyük boy susamlı sandviç ekmeği, mayonez 
+                        ve doğranmış marul lezzeti</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="resim/doublebigking.png" alt="">
+                <div class="container">
+                    <h2>Double Big King Menu</h2>
+                    <p>2 adet Hamburger eti, 3 katlı özel ekmeği, cheddar peyniri, salatalık turşusu, doğranmış marul 
+                        ve soğana eşlik eden özel Big King® sosun birleşimi.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="resim/fishroyale.png" alt="">
+                <div class="container">
+                    <h2>Fish Royale Menu</h2>
+                    <p>Fish Royale® eti, küçük boy susamlı sandviç ekmeği, doğranmış marul ve Burger King® klasiğine lezzetini veren 
+                        tartar sosun birleşimi olan Fish Royale®, balık eti sevenlerin tercihi olacak.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-3">
+            <div class="card">
+                <img src="resim/tavuklubarbeku.png" alt="">
+                <div class="container">
+                    <h2>Chicken BBQ Menu</h2>
+                    <p>Tavukburger eti, küçük boy susamlı sandviç ekmeği, cheddar peyniri, 
+                        barbekü sosu ve çıtır kaplamalı soğanlarıyla Burger King'in lezzet alternatifi</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="resim/texassmokehouse.png" alt="">
+                <div class="container">
+                    <h2>Texas Smokehouse Burger</h2>
+                    <p>Whopper® eti, füme eti, cheddar peyniri, barbekü sosu ve çıtır kaplamalı 
+                        soğanları ile nefis bir seçim.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="resim/triplewhopper.png" alt="">
+                <div class="container">
+                    <h2>Triple Whopper Menu</h2>
+                    <p>3 adet Whopper® eti, büyük boy susamlı sandviç ekmeği, salatalık turşusu, ketçap, mayonez, göbek salata, domates 
+                        ve soğandan oluşan nefis bir seçim.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        designed by FCsoftware
+    </footer>
+</body>
+</html>
